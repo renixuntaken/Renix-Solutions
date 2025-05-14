@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renix Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Renix<span>Solutions</span></div>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="mailto:renix@renixsolutions.com" class="btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Building Smart Solutions</h1>
+    <p>I'm a 17-year-old entrepreneur who loves working on projects and creating digital products that solve real problems.</p>
+    <a href="projects.html" class="btn-primary">See My Projects</a>
+  </section>
+
+  <section class="about">
+    <h2>About Renix Solutions</h2>
+    <p>Renix Solutions is my personal project lab where I explore ideas, build startups, and develop innovative tools for the modern web.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Renix Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const path = window.location.pathname;
+    if (path.includes('index') || path === "/") {
+      document.getElementById('home-link').classList.add('active');
+    } else if (path.includes('projects')) {
+      document.getElementById('projects-link').classList.add('active');
+    }
+  </script>
+</body>
+</html>

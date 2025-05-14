@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Renix Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Renix<span>Solutions</span></div>
+    <nav>
+      <a href="index.html" class="nav-link" id="home-link">Home</a>
+      <a href="projects.html" class="nav-link" id="projects-link">Projects</a>
+      <a href="mailto:renix@renixsolutions.com" class="btn-primary">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Discord Timestamp Generator</h3>
+        <p>Create Discord timestamps that auto-adjust to each user's timezone.</p>
+        <a href="https://timestamp.renixsolutions.com/" target="_blank">Visit →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Discord Utilities</h3>
+        <p>Manage webhooks, send messages through them and has a spammer & logs.</p>
+        <a href="https://utilities.renixsolutions.com/" target="_blank">Visit →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Discord Webhook Proxy</h3>
+        <p>Open source Roblox Proxy, allows you to send webhook requests to discord from Roblox.</p>
+        <a href="https://proxy.renixsolutions.com/" target="_blank">Visit →</a>
+      </div>
+      
+
+      <!-- Add more project cards here -->
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Renix Solutions. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const path = window.location.pathname;
+    if (path.includes('index') || path === "/") {
+      document.getElementById('home-link').classList.add('active');
+    } else if (path.includes('projects')) {
+      document.getElementById('projects-link').classList.add('active');
+    }
+  </script>
+</body>
+</html>
